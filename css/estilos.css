@@ -61,7 +61,7 @@ body{
     text-shadow: 0 0 2px rgb(206, 206, 206);
 }
 
-/* media queris header */
+/* media quereis header */
 
 @media screen and (max-width: 1024px){
     .slogan1{
@@ -140,6 +140,15 @@ body{
     text-align: center;
 }
 
+.img-thumbnail:hover{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    z-index: 100;
+    transform: translateX(-10%);
+}
+
 /* media queris nosotros */
 
 @media screen and (max-width: 768px){
@@ -208,6 +217,10 @@ body{
     font-family: 'Libre Baskerville', serif !important;
 }
 
+.card-header{
+    background-color: rgb(194, 194, 94);
+}
+
 /* fin faq */
 
 
@@ -240,6 +253,7 @@ body{
     animation-name: girar;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes girar{
