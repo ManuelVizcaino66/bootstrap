@@ -24,7 +24,7 @@ body{
 .nav-link{
     font-family: 'Libre Baskerville', serif !important;
     color: rgb(255, 226, 2) !important;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
 }
 .sec1{
     height: 300px;
@@ -59,47 +59,6 @@ body{
     letter-spacing: 3px;
     word-spacing: 10px;
     text-shadow: 0 0 2px rgb(206, 206, 206);
-}
-
-/* media quereis header */
-
-@media screen and (max-width: 1024px){
-    .slogan1{
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .slogan1{
-        font-size: 25px;
-    }
-    .sec3 h2{
-        font-size: 25px;
-    }
-    .nav-link{
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .slogan1{
-        font-size: 15px;
-    }
-    .sec3 h2{
-        font-size: 15px;
-    }
-    .nav-link{
-        font-size: 8px;
-    }
-}
-
-@media screen and (max-width: 425px){
-    .slogan1{
-        font-size: 10px;
-    }
-    .sec3 h2{
-        font-size: 10px;
-    }
 }
 
 /* fin header */
@@ -146,39 +105,7 @@ body{
     left: 50%;
     width: 50%;
     z-index: 100;
-    transform: translateX(-10%);
-}
-
-/* media queris nosotros */
-
-@media screen and (max-width: 768px){
-    .h2-nos{
-        font-size: 25px;
-    }
-    .par-nos{
-        font-size: 12px;
-    }
-    .cer{
-        font-size: 25px;
-    }
-    #map-nos{
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 425px){
-    .h2-nos{
-        font-size: 18px;
-    }
-    .par-nos{
-        font-size: 10px;
-    }
-    .cer{
-        font-size: 18px;
-    }
-    #map-nos{
-        height: 200px;
-    }
+    transform: translateX(-50%);
 }
 
 /* fin nosotros */
@@ -192,16 +119,6 @@ body{
     text-align: center;
     font-family: 'Libre Baskerville', serif !important;
     height: 70px;
-}
-
-/* media queris portfolio */
-
-@media screen and (max-width: 768px){
-    .tit-port{
-        font-size: 20px;
-        margin-top: 20px;
-        height: 40px;
-    }
 }
 
 /* fin portfolio */
@@ -224,30 +141,23 @@ body{
 /* fin faq */
 
 
+
 /* servicios */
 
-.servicios{
+/* .servicios{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 40px 100px 40px 100px;
-}
+} */
 
 .artServ{
     display: flex;
     flex-direction: column-reverse;
-    width: 22%;
 }
 
 .imgServ{
-    border-radius: 200px;
+    border-radius: 200px !important;
 }
-
-/* .imgServ:hover{
-    transform: rotateZ(360deg);
-    transition: all 2s;
-} */
 
 .imgServ{
     animation-name: girar;
@@ -277,33 +187,6 @@ body{
     font-size: x-large;
 }
 
-/* media quereis servicios */
-
-@media screen and (max-width: 1024px){
-    .nombre{
-        font-size: 16px;
-        letter-spacing: 0px;
-    }
-    .servicios{
-        padding: 20px 50px 20px 50px;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .servicios{
-        padding: 10px 30px 10px 30px;
-    }
-}
-
-@media screen and (max-width: 425px){
-    .nombre{
-        font-size: 9px;
-        letter-spacing: 0px;
-    }
-    .servicios{
-        padding: 0px 0px 0px 0px;
-    }
-}
 
 /* fin servicios */
 
@@ -322,3 +205,108 @@ body{
 }
 
 /* fin footer */
+
+
+/* media queries */
+
+@media screen and (max-width: 1024px){
+    /* header */
+    .slogan1{
+        font-size: 25px;
+    }
+
+    /* servicios */
+    .nombre{
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+    .servicios{
+        padding: 20px 50px 20px 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* header */
+    .slogan1{
+        font-size: 25px;
+    }
+    .sec3 h2{
+        font-size: 25px;
+    }
+    .nav-link{
+        font-size: 10px;
+    }
+
+    /* nosotros */
+
+    .h2-nos{
+        font-size: 25px;
+    }
+    .par-nos{
+        font-size: 12px;
+    }
+    .cer{
+        font-size: 25px;
+    }
+    #map-nos{
+        height: 300px;
+    }
+
+    /* portfolio */
+    .tit-port{
+        font-size: 20px;
+        margin-top: 20px;
+        height: 40px;
+    }
+
+    /* servicios */
+    .servicios{
+        padding: 10px 30px 10px 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /* header */
+    .slogan1{
+        font-size: 15px;
+    }
+    .sec3 h2{
+        font-size: 15px;
+    }
+    .nav-link{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    /* header */
+    .slogan1{
+        font-size: 10px;
+    }
+    .sec3 h2{
+        font-size: 10px;
+    }
+
+    /* nosotros */
+    .h2-nos{
+        font-size: 18px;
+    }
+    .par-nos{
+        font-size: 10px;
+    }
+    .cer{
+        font-size: 18px;
+    }
+    #map-nos{
+        height: 200px;
+    }
+
+    /* servicios */
+    .nombre{
+        font-size: 9px;
+        letter-spacing: 0px;
+    }
+    .servicios{
+        padding: 0px 0px 0px 0px;
+    }
+}
