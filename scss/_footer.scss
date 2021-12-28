@@ -1,0 +1,12 @@
+.text-center{
+    background-color: black !important;
+    & .card-body{
+        color:blanchedalmond;
+        & .card-title{
+            font-style: italic;
+        }
+    }
+}
+
+
+

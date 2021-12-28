@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&family=Poppins:wght@200&family=Source+Sans+Pro:wght@300&display=swap");
+.navbar {
+  background-color: black !important;
+}
+
+.navbar .nav-link {
+  font-family: 'Libre Baskerville', serif !important;
+  color: #ffe202 !important;
+  letter-spacing: 2px;
+}
+
+.sec1 {
+  height: 300px;
+  background-image: url(../img/fotoStudio/ASECAS_STUDIO_2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sec1 .slogan1 {
+  color: black;
+  font-style: italic;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: 7px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 40px;
+  background-color: rgba(145, 145, 145, 0.817);
+  text-shadow: 0 0 2px white;
+}
+
+.sec3 h2 {
+  color: black;
+  text-align: center;
+  height: 100px;
+  background-color: #ffe600a5;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  text-shadow: 0 0 2px #cecece;
+}
+
+.sec1-nos {
+  font-family: 'Libre Baskerville', serif !important;
+}
+
+.sec1-nos .h2-nos {
+  text-align: center;
+  text-shadow: 0 0 3px white;
+}
+
+.sec1-nos #map-nos {
+  height: 300px;
+}
+
+.sec1-nos #map-nos:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.sec1-nos .modal1 {
+  text-align: center;
+}
+
+.certificados {
+  font-family: 'Libre Baskerville', serif !important;
+  padding: 50px 0 100px 0;
+}
+
+.certificados .cer {
+  color: black;
+  text-align: center;
+  text-shadow: 0 0 3px white;
+}
+
+.certificados .cer .img-thumbnail:hover {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  z-index: 100;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.tit-port {
+  margin-top: 40px;
+  color: black;
+  text-shadow: 0 0 3px white;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif !important;
+  height: 70px;
+}
+
+.artServ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.artServ .imgServ {
+  border-radius: 1000px !important;
+}
+
+.artServ .imgServ {
+  -webkit-animation-name: girar;
+          animation-name: girar;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes girar {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes girar {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.artServ .nombre {
+  background-color: #949453;
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 3px;
+  font-size: x-large;
+}
+
+.btn {
+  font-family: 'Libre Baskerville', serif !important;
+  color: black !important;
+}
+
+.btn-dark {
+  font-family: 'Libre Baskerville', serif !important;
+}
+
+.card-header {
+  background-color: #c2c25e;
+}
+
+.text-center {
+  background-color: black !important;
+}
+
+.text-center .card-body {
+  color: blanchedalmond;
+}
+
+.text-center .card-body .card-title {
+  font-style: italic;
+}
+
+@media screen and (max-width: 1024px) {
+  /* header */
+  .slogan1 {
+    font-size: 25px;
+  }
+  /* servicios */
+  .nombre {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  .servicios {
+    padding: 20px 50px 20px 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* header */
+  .slogan1 {
+    font-size: 25px;
+  }
+  .sec3 h2 {
+    font-size: 25px;
+  }
+  .nav-link {
+    font-size: 10px;
+  }
+  /* nosotros */
+  .h2-nos {
+    font-size: 25px;
+  }
+  .par-nos {
+    font-size: 12px;
+  }
+  .cer {
+    font-size: 25px;
+  }
+  #map-nos {
+    height: 300px;
+  }
+  /* portfolio */
+  .tit-port {
+    font-size: 20px;
+    margin-top: 20px;
+    height: 40px;
+  }
+  /* servicios */
+  .servicios {
+    padding: 10px 30px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* header */
+  .slogan1 {
+    font-size: 15px;
+  }
+  .sec3 h2 {
+    font-size: 15px;
+  }
+  .nav-link {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* header */
+  .slogan1 {
+    font-size: 10px;
+  }
+  .sec3 h2 {
+    font-size: 10px;
+  }
+  /* nosotros */
+  .h2-nos {
+    font-size: 18px;
+  }
+  .par-nos {
+    font-size: 10px;
+  }
+  .cer {
+    font-size: 18px;
+  }
+  #map-nos {
+    height: 200px;
+  }
+  /* servicios */
+  .nombre {
+    font-size: 9px;
+    letter-spacing: 0px;
+  }
+  .servicios {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+/* font-family: 'Libre Baskerville', serif !important; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../img/layered-waves-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .servicios{
+    display: flex;
+    justify-content: center;
+    padding: 40px 100px 40px 100px;
+} */
+/*# sourceMappingURL=estilos.css.map */

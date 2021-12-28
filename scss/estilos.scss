@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&family=Poppins:wght@200&family=Source+Sans+Pro:wght@300&display=swap');
+
+@import "header";
+@import "nosotros";
+@import "portfolio";
+@import "servicios";
+@import "faq";
+@import "contacto";
+@import "footer";
+@import "queries";
+
+/* font-family: 'Libre Baskerville', serif !important; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../img/layered-waves-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .servicios{
+    display: flex;
+    justify-content: center;
+    padding: 40px 100px 40px 100px;
+} */

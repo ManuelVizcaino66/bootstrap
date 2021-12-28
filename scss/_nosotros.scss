@@ -1,0 +1,38 @@
+.sec1-nos{
+    font-family: 'Libre Baskerville', serif !important;
+    & .h2-nos{
+        text-align: center;
+        text-shadow: 0 0 3px white;
+    }
+    & #map-nos{
+        height: 300px;
+    }
+    #map-nos:hover{
+        transform: scale(1.2);
+        transition: all 2s;
+    }
+    & .modal1{
+        text-align: center;
+    }
+}
+
+
+.certificados{
+    font-family: 'Libre Baskerville', serif !important;
+    padding: 50px 0 100px 0;
+    & .cer{
+        color: black;
+        text-align: center;
+        text-shadow: 0 0 3px white;
+        & .img-thumbnail:hover{
+            position: fixed;
+            top: 0;
+            left: 50%;
+            width: 50%;
+            z-index: 100;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
