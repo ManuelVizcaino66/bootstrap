@@ -1,8 +1,26 @@
+// colores
+
+$amarillo: #FFE500;
+$amarillo-trans: #ffe6009b;
+$marron: #9C9165;
+$marron-trans: #9c91659a;
+$blanco: #FDF9F0;
+$negro: #1F1B0C;
+$negro-trans: #1f1b0ca5;
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+
+
+
 .sec1-nos{
     font-family: 'Libre Baskerville', serif !important;
     & .h2-nos{
         text-align: center;
-        text-shadow: 0 0 3px white;
+        text-shadow: 0 0 3px $blanco;
     }
     & #map-nos{
         height: 300px;
@@ -18,10 +36,10 @@
 
 
 .certificados{
-    font-family: 'Libre Baskerville', serif !important;
+    @extend .sec1-nos;
     padding: 50px 0 100px 0;
     & .cer{
-        color: black;
+        color: $negro;
         text-align: center;
         text-shadow: 0 0 3px white;
         & .img-thumbnail:hover{

@@ -1,3 +1,21 @@
+// colores
+
+$amarillo: #FFE500;
+$amarillo-trans: #ffe6009b;
+$marron: #9C9165;
+$marron-trans: #9c91659a;
+$blanco: #FDF9F0;
+$negro: #1F1B0C;
+$negro-trans: #1f1b0ca5;
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+
+
+
 .artServ{
     display: flex;
     flex-direction: column-reverse;
@@ -22,7 +40,7 @@
         }
     }
     & .nombre{
-        background-color: rgb(148, 148, 83);
+        // background-color: $marron-trans;
         margin-top: 15px;
         padding: 5px;
         border-radius: 10px;
@@ -33,5 +51,17 @@
     }
 }
 
+// incorporacion de mapa
 
+$servicios: (
+    serv1: #FDF9F0,
+    serv2: #9c91659a,
+    serv3: #ffe6009b,
+    serv4: #473c12a5
+    );
 
+@each $serv, $color in $servicios {
+    .btn--#{$serv} {
+        background-color: $color;
+    }
+}

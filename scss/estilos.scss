@@ -1,3 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../img/fondo3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&family=Poppins:wght@200&family=Source+Sans+Pro:wght@300&display=swap');
 
 @import "header";
@@ -11,19 +26,22 @@
 
 /* font-family: 'Libre Baskerville', serif !important; */
 
-*{
-    margin: 0;
-    padding: 0;
+
+// colores
+
+$amarillo: #FFE500;
+$amarillo-trans: #ffe6009b;
+$marron: #9C9165;
+$marron-trans: #9c91659a;
+$blanco: #FDF9F0;
+$negro: #1F1B0C;
+$negro-trans: #1f1b0ca5;
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background-image: url(../img/layered-waves-haikei.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /* .servicios{
     display: flex;

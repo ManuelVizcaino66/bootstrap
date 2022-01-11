@@ -1,21 +1,39 @@
+
+// colores
+
+$amarillo: #FFE500;
+$amarillo-trans: #ffe6009b;
+$marron: #9C9165;
+$marron-trans: #9c91659a;
+$blanco: #FDF9F0;
+$negro: #1F1B0C;
+$negro-trans: #1f1b0ca5;
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+
 .navbar{
     background-color: black !important;
     & .nav-link{
         font-family: 'Libre Baskerville', serif !important;
-        color: rgb(255, 226, 2) !important;
+        color: $blanco !important;
         letter-spacing: 2px;
     }
 }
 
 .sec1{
-    height: 300px;
+    @include sizes(100%, 300px);
+
     background-image: url(../img/fotoStudio/ASECAS_STUDIO_2.jpg);
     background-size: cover;
     background-position: center;
     & .slogan1{
         color: black;
         font-style: italic;
-        height: 100px;
+        @include sizes(100%, 100px);
         position: relative;
         top: 100px;
         line-height: 100px;
@@ -24,21 +42,21 @@
         word-spacing: 7px;
         font-family: 'Libre Baskerville', serif;
         font-size: 40px;
-        background-color: rgba(145, 145, 145, 0.817);
-        text-shadow: 0 0 2px rgb(255, 255, 255);
+        background-color: $marron-trans;
+        text-shadow: 0 0 2px $blanco;
     }
 }
 
-.sec3 h2{
+.sec3 h1{
     color: black;
     text-align: center;
     height: 100px;
-    background-color: #ffe600a5;
+    background-color: $amarillo-trans;
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     line-height: 100px;
     font-size: 30px;
     letter-spacing: 3px;
     word-spacing: 10px;
-    text-shadow: 0 0 2px rgb(206, 206, 206);
+    text-shadow: 0 0 2px $blanco;
 }

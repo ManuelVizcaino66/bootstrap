@@ -1,16 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&family=Poppins:wght@200&family=Source+Sans+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../img/fondo3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .navbar {
   background-color: black !important;
 }
 
 .navbar .nav-link {
   font-family: 'Libre Baskerville', serif !important;
-  color: #ffe202 !important;
+  color: #FDF9F0 !important;
   letter-spacing: 2px;
 }
 
 .sec1 {
   height: 300px;
+  width: 100%;
   background-image: url(../img/fotoStudio/ASECAS_STUDIO_2.jpg);
   background-size: cover;
   background-position: center;
@@ -20,6 +36,7 @@
   color: black;
   font-style: italic;
   height: 100px;
+  width: 100%;
   position: relative;
   top: 100px;
   line-height: 100px;
@@ -28,55 +45,54 @@
   word-spacing: 7px;
   font-family: 'Libre Baskerville', serif;
   font-size: 40px;
-  background-color: rgba(145, 145, 145, 0.817);
-  text-shadow: 0 0 2px white;
+  background-color: #9c91659a;
+  text-shadow: 0 0 2px #FDF9F0;
 }
 
-.sec3 h2 {
+.sec3 h1 {
   color: black;
   text-align: center;
   height: 100px;
-  background-color: #ffe600a5;
+  background-color: #ffe6009b;
   font-family: 'Libre Baskerville', serif;
   text-align: center;
   line-height: 100px;
   font-size: 30px;
   letter-spacing: 3px;
   word-spacing: 10px;
-  text-shadow: 0 0 2px #cecece;
+  text-shadow: 0 0 2px #FDF9F0;
 }
 
-.sec1-nos {
+.sec1-nos, .certificados {
   font-family: 'Libre Baskerville', serif !important;
 }
 
-.sec1-nos .h2-nos {
+.sec1-nos .h2-nos, .certificados .h2-nos {
   text-align: center;
-  text-shadow: 0 0 3px white;
+  text-shadow: 0 0 3px #FDF9F0;
 }
 
-.sec1-nos #map-nos {
+.sec1-nos #map-nos, .certificados #map-nos {
   height: 300px;
 }
 
-.sec1-nos #map-nos:hover {
+.sec1-nos #map-nos:hover, .certificados #map-nos:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 2s;
   transition: all 2s;
 }
 
-.sec1-nos .modal1 {
+.sec1-nos .modal1, .certificados .modal1 {
   text-align: center;
 }
 
 .certificados {
-  font-family: 'Libre Baskerville', serif !important;
   padding: 50px 0 100px 0;
 }
 
 .certificados .cer {
-  color: black;
+  color: #1F1B0C;
   text-align: center;
   text-shadow: 0 0 3px white;
 }
@@ -148,7 +164,6 @@
 }
 
 .artServ .nombre {
-  background-color: #949453;
   margin-top: 15px;
   padding: 5px;
   border-radius: 10px;
@@ -158,9 +173,25 @@
   font-size: x-large;
 }
 
+.btn--serv1 {
+  background-color: #FDF9F0;
+}
+
+.btn--serv2 {
+  background-color: #9c91659a;
+}
+
+.btn--serv3 {
+  background-color: #ffe6009b;
+}
+
+.btn--serv4 {
+  background-color: #473c12a5;
+}
+
 .btn {
   font-family: 'Libre Baskerville', serif !important;
-  color: black !important;
+  color: #1F1B0C !important;
 }
 
 .btn-dark {
@@ -168,7 +199,7 @@
 }
 
 .card-header {
-  background-color: #c2c25e;
+  background-color: #9C9165;
 }
 
 .text-center {
@@ -279,21 +310,6 @@
 }
 
 /* font-family: 'Libre Baskerville', serif !important; */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-image: url(../img/layered-waves-haikei.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* .servicios{
     display: flex;
     justify-content: center;
