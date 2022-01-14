@@ -21,6 +21,11 @@ $negro-trans: #1f1b0ca5;
     & .h2-nos{
         text-align: center;
         text-shadow: 0 0 3px $blanco;
+        padding-bottom: 10px;
+    }
+    & .par-nos{
+        text-align: center;
+        font-size: 17px;
     }
     & #map-nos{
         height: 300px;
