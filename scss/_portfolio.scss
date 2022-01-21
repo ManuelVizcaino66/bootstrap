@@ -8,13 +8,6 @@ $blanco: #FDF9F0;
 $negro: #1F1B0C;
 $negro-trans: #1f1b0ca5;
 
-@mixin sizes($width, $height) {
-    height: $height;
-    width: $width;
-}
-
-
-
 
 .tit-port{
     margin-top: 40px;
